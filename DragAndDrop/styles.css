@@ -1,0 +1,82 @@
+html {
+  font-family: 'Nunito';
+}
+
+body {
+  background-color: white;
+  color: #130f0d;
+}
+
+.boards {
+  margin-top: 48px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.board {
+  box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.1);
+
+  margin: 16px;
+}
+
+.board h3 {
+  padding: 16px;
+  margin: 0;
+  color: #f25764;
+  box-shadow: 0 2px 4px -2px #f2acb2cc;
+}
+
+.dropzone {
+  min-width: 280px;
+  min-height: 200px;
+  padding: 16px;
+}
+
+.card {
+  width: 250px;
+
+  background-color: #fdfdfd;
+  margin: 25px 0;
+  padding: 16px;
+  box-shadow: 0 1px 3px 0px #f2acb2cc;
+
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.status {
+  width: 30px;
+  height: 8px;
+
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.status.green {
+  background-color: #23d2ac;
+}
+.status.blue {
+  background-color: #33adff;
+}
+.status.red {
+  background-color: #f25764;
+}
+
+.highlight {
+  background-color: #eee;
+}
+.card,
+.dropzone {
+  transition: 200ms;
+}
+
+.is-dragging {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.over {
+  background-color: #4cd13733;
+}
